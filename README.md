@@ -1,6 +1,8 @@
 # Graph3d
 3D Graph Visualization Tool created with Unity3d 5.5.4
 
+<b>The project is currently in alpha stage.</b>
+
 The "Assets" folder should contain everything you need to open and rund the project in Unity. The C# source code hides in Assets/scripts.
 
 # Installation and Usage
