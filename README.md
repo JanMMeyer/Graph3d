@@ -5,6 +5,7 @@ The "Assets" folder should contain everything you need to open and rund the proj
 
 # Installation and Usage
 
+<b>On Windows:</b>
 Download and unzip the G3DBuild.zip. Its a standalone build, so just start the G3D.exe and enjoy!
 
 <b>Loading graph data:</b>
