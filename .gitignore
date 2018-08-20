@@ -328,3 +328,13 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Library/ScriptAssemblies
+/Library
+/Assembly-CSharp.csproj
+/Assembly-CSharp-firstpass.csproj
+/Assembly-CSharp-Editor-firstpass.csproj
+/ProjectSettings
+/Graph3D.sln
+/Graph3D.Plugins.csproj
+/Graph3D.Editor.Plugins.csproj
+/Graph3D.csproj
