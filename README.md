@@ -1,5 +1,5 @@
 # Graph3d
-is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas. I is created with Unity3d 5.5.4.
+is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas. - created with Unity3d 5.5.4.
 
 ![rotate and force demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemorotatesmall.gif)
 ![select demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemoselectsmall.gif)
