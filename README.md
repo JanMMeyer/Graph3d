@@ -1,9 +1,11 @@
 # Graph3d
 3D Graph Visualization Tool created with Unity3d 5.5.4.
 
+![demo gif](https://github.com/JanMMeyer/Graph3d/blob/master/g3ddemosmall.gif)
+
 <b>The project is currently in alpha stage.</b>
 
-The "Assets" folder should contain everything you need to open and run the project in Unity. The C# source code hides in Assets/scripts.
+The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales filebrowser plugin](https://goo.gl/GCmzrU) which needs to be istalled separately via the asset-store to build the project in Unity3d. The C# source code hides in Assets/scripts.
 
 # Installation and Usage
 
