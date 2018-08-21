@@ -28,7 +28,7 @@ namespace G3D
 			this.setupForces();
 			this.setupInputScanners();
 
-			EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/CustomSmall/", "csv"));
+			//EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/CustomSmall/", "csv"));
 			//EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/LesMiserables/", "csv"));
 		}
 
