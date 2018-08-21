@@ -8,7 +8,7 @@ The "Assets" folder should contain everything you need to open and rund the proj
 # Installation and Usage
 
 <b>On Windows:</b>
-Download and unzip the Graph3D.zip. Its a standalone build, so just start the G3D.exe and enjoy!
+Download and unzip the [latest release](https://github.com/JanMMeyer/Graph3d/releases/latest). Its a standalone build, so just start the G3D.exe and enjoy!
 
 <b>Loading graph data:</b>
 
