@@ -1,5 +1,5 @@
 # Graph3d
-is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas, employing the Barnes-Hut algorithm for manybody-simulations to keep CPU-Load in check (O(n\*log(n) instead of O(2^n)). - created with Unity3d 5.5.4.
+is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas, employing the Barnes-Hut algorithm for manybody-simulations to keep CPU-Load in check ( O(n\*log(n)) instead of O(2^n) ). - created with Unity3d 5.5.4.
 
 ![rotate and force demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemorotatesmall.gif)
 ![select demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemoselectsmall.gif)
