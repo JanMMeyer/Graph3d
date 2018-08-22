@@ -1,5 +1,5 @@
 # Graph3d
-is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas. - created with Unity3d 5.5.4.
+is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas, employing the Barnes-Hut algorithm for manybody-simulations to keep CPU-Load in check (O(n\*log(n) instead of O(2^n)). - created with Unity3d 5.5.4.
 
 ![rotate and force demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemorotatesmall.gif)
 ![select demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemoselectsmall.gif)
@@ -17,6 +17,10 @@ Download and unzip the [latest release](https://github.com/JanMMeyer/Graph3d/rel
 
 To load a Graph, use the "Open"-Button and select a folder containing "Nodes.csv" and "Edges.csv".
 The Build comes with some example graph data in the "ImportDataExamples" subfolder. More Details on the required data format in the 'Data Format' section below
+
+<b>Force Adjustment</b>
+
+The slider section on the left allows real time adjustment of the forces at work. "Node Repulsion" forces the *all* nodes apart, "Edge Attraction" pulls *connceted* Nodes together, and "Centering Force" pulls all nodes to the center.
 
 <b>Selection:</b>
 
@@ -39,4 +43,8 @@ The cone follows the rotation right and left, but not up or down.
 "Spacebar"/"Left Ctrl" moves the cone up/down.
 
 # Data format
- coming soon
+
+The graph data needs to be provided in two separate csv-files "Nodes.csv" and "Edges.csv" with ";" (semicolon) as delimiter. Each file needs a header, containing at least an "id" column for the "Nodes.csv" and "id;source;target" columns for "Edges.csv. The "label" column for "Nodes.csv" is optional and sets the visible *names* of the nodes. "Edges.csv" will support an optional "category"  (directed and undirected) and "label" soon.
+The "id" fields in each file must be filewide unique but are parsed as strings, i.e. any alpanumerical expression is ok.
+The "source" and "target" fields in "Edges.csv" need to correspont to "id"s in "Nodes.cvs", and determine which nodes are connected by that edge. For now source and target are interchangeable.
+
