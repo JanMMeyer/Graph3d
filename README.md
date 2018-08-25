@@ -1,7 +1,7 @@
 # Graph3d
 is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas, employing the Barnes-Hut algorithm for manybody-simulations to keep CPU-Load in check ( O(n\*log(n)) instead of O(2^n) ). - created with Unity3d 5.5.4.
 
-Graph3d is also an *experiment in solid programming i wrote in my free time over the course of some weeks*, that might lead to over enginered solutions in some place, which served more as an exercise than beeing well measured in terms of code complexety. Anyway, the code structure was layed out to achieve  amon ohter things the folloing goals:
+Graph3d is also an *experiment in solid programming i wrote in my free time over the course of some weeks*, that might suffer from over enginered solutions in some place, which served more as an exercise than beeing well measured in terms of code complexety. Anyway, the code structure was layed out to achieve  amon ohter things the folloing goals:
  * Encapsulation of the frontend, in a manner that it can be easyly exchanged for anotther implementation, that does not rely on unity 3d.
  * Extensibility of the backend, so that new file adapters can be added with ease.
  * Flexibility of the business layer, so that extensions of the core domain are simple to execute and don't lead to (to much) adaptation pressure outside of the domain. 
