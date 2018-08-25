@@ -49,7 +49,13 @@ The cone follows the rotation right and left, but not up or down.
 
 # Data format
 
-The graph data needs to be provided in two separate csv-files "Nodes.csv" and "Edges.csv" with ";" (semicolon) as delimiter. Each file needs a header, containing at least an "id" column for the "Nodes.csv" and "id;source;target" columns for "Edges.csv. The "label" column for "Nodes.csv" is optional and sets the visible *names* of the nodes. "Edges.csv" will support an optional "category"  (directed and undirected) and "label" soon.
+The graph data needs to be provided in two separate csv-files "Nodes.csv" and "Edges.csv" with ";" (semicolon) as delimiter. 
+
+Each file needs a header, containing at least an "id" column for the "Nodes.csv" and "id;source;target" columns for "Edges.csv. 
+
+The "label" column for "Nodes.csv" is optional and sets the visible *names* of the nodes. "Edges.csv" will support an optional "category"  (directed and undirected) and "label" soon.
+
 The "id" fields in each file must be filewide unique but are parsed as strings, i.e. any alpanumerical expression is ok.
+
 The "source" and "target" fields in "Edges.csv" need to correspont to "id"s in "Nodes.cvs", and determine which nodes are connected by that edge. For now source and target are interchangeable.
 
