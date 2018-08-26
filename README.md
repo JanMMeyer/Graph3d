@@ -37,7 +37,7 @@ Hold down the right mouse button and move the mouse to rotate your view around t
 
 Scrolling the mouse wheel while holding down the right mouse button changes the distance of the view to the cone.
 
-The up/down rotation of your view is limited to 60°.
+The up/down rotation of your view is limited to 60° measured relative to the horizontal plane.
 
 The cone follows the rotation right and left, but not up or down.
 
