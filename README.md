@@ -8,11 +8,11 @@ is a force driven 3D graph visualization tool that automatically clusters strong
 <b>The project is currently in alpha stage.</b>
 
 Graph3d is also an *experiment in solid programming i wrote in my free time over the course of some weeks*, that might suffer from over engineered solutions in some place, which served more as an exercise ground than being well-measured solutions in terms of code complexity. Anyway, the code structure was laid out to achieve among other things the folloing goals:
- * Encapsulation of the frontend, in a manner that it can be easyly exchanged for another implementation, that does not rely on unity 3d.
+ * Encapsulation of the frontend, in a manner that it can be easily exchanged for another implementation, that does not rely on unity 3d.
  * Extensibility of the backend, so that new file adapters can be added with ease.
  * Flexibility of the business layer, so that extensions of the core domain are simple to execute and don't lead to (to much) adaptation pressure outside of the domain. 
 
-The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales filebrowser plugin](https://goo.gl/GCmzrU) which needs to be istalled separately via the asset-store to build the project in Unity3d. The C# source code hides in Assets/scripts.
+The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales file browser plugin](https://goo.gl/GCmzrU) which needs to be installed separately via the asset-store to build the project in Unity3d. The C# source code hides in Assets/scripts.
 
 # Installation and Usage
 
@@ -26,7 +26,7 @@ The Build comes with some example graph data in the "ImportDataExamples" subfold
 
 <b>Force Adjustment</b>
 
-The slider section on the left allows real time adjustment of the forces at work. "Node Repulsion" forces the *all* nodes apart, "Edge Attraction" pulls *connceted* Nodes together, and "Centering Force" pulls all nodes to the center.
+The slider section on the left allows real-time adjustment of the forces at work. "Node Repulsion" forces the *all* nodes apart, "Edge Attraction" pulls *connected* Nodes together, and "Centering Force" pulls all nodes to the centre.
 
 <b>Selection:</b>
 
@@ -56,7 +56,7 @@ Each file needs a header, containing at least an "id" column for the "Nodes.csv"
 
 The "label" column for "Nodes.csv" is optional and sets the visible *names* of the nodes. "Edges.csv" will support an optional "category"  (directed and undirected) and "label" soon.
 
-The "id" fields in each file must be filewide unique but are parsed as strings, i.e. any alpanumerical expression is ok.
+The "id" fields in each file must be file-wide unique but are parsed as strings, i.e. any alphanumerical expression is ok.
 
-The "source" and "target" fields in "Edges.csv" need to correspont to "id"s in "Nodes.cvs", and determine which nodes are connected by that edge. For now source and target are interchangeable.
+The "source" and "target" fields in "Edges.csv" need to correspond to "id"s in "Nodes.cvs", and determine which nodes are connected by that edge. For now, source and target are interchangeable.
 
