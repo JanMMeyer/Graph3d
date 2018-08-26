@@ -1,15 +1,16 @@
 # Graph3d
 is a force driven 3D graph visualization tool that automatically clusters strongly connected nodes and separates weakly conntected areas, employing the Barnes-Hut algorithm for manybody-simulations to keep CPU-Load in check ( O(n\*log(n)) instead of O(2^n) ). - created with Unity3d 5.5.4.
 
+![rotate and force demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemorotatesmall.gif)
+![select demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemoselectsmall.gif)
+
+
+<b>The project is currently in alpha stage.</b>
+
 Graph3d is also an *experiment in solid programming i wrote in my free time over the course of some weeks*, that might suffer from over enginered solutions in some place, which served more as an exercise ground than beeing well measured solutions in terms of code complexety. Anyway, the code structure was layed out to achieve  among ohter things the folloing goals:
  * Encapsulation of the frontend, in a manner that it can be easyly exchanged for another implementation, that does not rely on unity 3d.
  * Extensibility of the backend, so that new file adapters can be added with ease.
  * Flexibility of the business layer, so that extensions of the core domain are simple to execute and don't lead to (to much) adaptation pressure outside of the domain. 
-
-![rotate and force demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemorotatesmall.gif)
-![select demo gif](https://github.com/JanMMeyer/G3DDemos/blob/master/g3ddemoselectsmall.gif)
-
-<b>The project is currently in alpha stage.</b>
 
 The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales filebrowser plugin](https://goo.gl/GCmzrU) which needs to be istalled separately via the asset-store to build the project in Unity3d. The C# source code hides in Assets/scripts.
 
