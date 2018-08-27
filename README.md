@@ -8,7 +8,7 @@ is a force driven 3D graph visualization tool that automatically clusters strong
 <b>The project is currently in alpha stage.</b>
 
 Graph3d is also an *experiment in solid programming i wrote in my free time over the course of some weeks*, that might suffer from over engineered solutions in some place, which served more as an exercise ground than being well-measured solutions in terms of code complexity. Anyway, the code structure was laid out to achieve among other things the folloing goals:
- * Encapsulation of the frontend, in a manner that it can be easily exchanged for another implementation, that does not rely on unity 3d.
+ * Encapsulation of the frontend, in a manner that it can be easily exchanged for another implementation, that does not rely on Unity3d.
  * Extensibility of the backend, so that new file adapters can be added with ease.
  * Flexibility of the business layer, so that extensions of the core domain are simple to execute and don't lead to (to much) adaptation pressure outside of the domain. 
 
