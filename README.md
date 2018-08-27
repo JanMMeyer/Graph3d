@@ -22,7 +22,7 @@ Download and unzip the [latest release](https://github.com/JanMMeyer/Graph3d/rel
 <b>Loading graph data:</b>
 
 To load a Graph, use the "Open"-Button and select a folder containing "Nodes.csv" and "Edges.csv".
-The Build comes with some example graph data in the "ImportDataExamples" subfolder. More Details on the required data format in the 'Data Format' section below
+The Build comes with some example graph data in the "ImportDataExamples" subfolder. More Details on the required data format in the [Data Format](#data-format) section below.
 
 <b>Force Adjustment</b>
 
