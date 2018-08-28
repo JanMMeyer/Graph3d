@@ -1,6 +1,4 @@
-﻿using G3D.Core.EventSystem;
-
-namespace G3D
+﻿namespace G3D
 {
 	public class MButtons 
 	{

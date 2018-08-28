@@ -234,7 +234,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 80, y: -10}
-  m_SizeDelta: {x: 400, y: 530}
+  m_SizeDelta: {x: 400, y: 600}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &225290286
 MonoBehaviour:
@@ -2378,17 +2378,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Loading graph data:</b>\n\nTo load a Graph, use the \"Open\"-Button
-    and select a folder containing \"Nodes.csv\" and \"Edges.csv\".\n\n<b>Selection:</b>\n\nLeft
-    click a node to highlight it, left click the same node again to remove the highlighting.\n
-    \n<b>Navigation:</b>\n\nHold down the right mouse button and move the mouse to
-    rotate your view around cone in the middle of your screen.\n\nScrolling the mousewheel
-    while holding down the right mouse button changes the distance of the view to
-    the cone.\n\nThe up/down rotation of your view is limited to 60\xB0.\n\nThe cone
-    follows the rotation right and left, but not up or down.\n\n\"W\"/\"S\" moves
-    the cone to the forwards/backwards in the direction it is pointing.\n\n\"A\"/\"D\"
-    moves the cone to its left/right.\n\n\"Spacebar\"/\"Left Ctrl\" moves the cone
-    up/down.\n"
+  m_Text: "<b>Force Adjustment\r:</b>\n\r\nThe slider section on the left allows real-time
+    adjustment of the forces at work. \"Node Repulsion\" forces the all nodes apart,
+    \"Edge Attraction\" pulls connected Nodes together, and \"Centering Force\" pulls
+    all nodes to the centre.\r\n\r\n<b>Selection:</b>\r\n\r\nLeft click a node to
+    highlight it, left click the same node again to remove the highlighting.\r\n\r\n<b>Navigation:</b>\r\n\r\nHold
+    down the right mouse button and move the mouse to rotate your view around the
+    cone in the middle of your screen.\r\n\r\nScrolling the mouse wheel while holding
+    down the right mouse button changes the distance of the view to the cone.\r\n\r\nThe
+    up/down rotation of your view is limited to 60\xB0 measured relative to the horizontal
+    plane.\r\n\r\nThe cone follows the rotation right and left, but not up or down.\r\n\r\n\"W\"/\"S\"
+    moves the cone to the forwards/backwards in the direction it is pointing.\r\n\r\n\"A\"/\"D\"
+    moves the cone to its left/right.\r\n\r\n\"Spacebar\"/\"Left Ctrl\" moves the
+    cone up/down."
 --- !u!222 &1765928613
 CanvasRenderer:
   m_ObjectHideFlags: 0

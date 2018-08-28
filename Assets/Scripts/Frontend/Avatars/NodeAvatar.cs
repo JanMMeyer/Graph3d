@@ -7,10 +7,12 @@ namespace G3D.Frontend.Avatars
 	{
 		
 		protected GameObject gameObject;
+		ForceCooler forceCooler;
 
 		public NodeAvatar(GameObject nodeAvatarPrefab)
 		{
 			this.gameObject = MonoBehaviour.Instantiate(nodeAvatarPrefab, UnityEngine.Random.onUnitSphere * 7f, Quaternion.identity);
+			this.forceCooler = ForceCooler.GetInstance();
 		}
 
 		public Vector3 GetPosition()
@@ -25,6 +27,7 @@ namespace G3D.Frontend.Avatars
 
 		public void AddForce(Vector3 force)
 		{
+			force = force * this.forceCooler.getForceCoolFactor();
 			this.gameObject.GetComponent<Rigidbody>().AddForce(force);
 		}
 

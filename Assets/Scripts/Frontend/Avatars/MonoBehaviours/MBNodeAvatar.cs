@@ -12,6 +12,7 @@ namespace G3D.Frontend.Avatars
 		
 		MeshRenderer ownMeshRenderer;
 		SphereCollider triggerCollider;
+		ForceCooler forceCooler;
 
 		public void SetHighlighted(bool state)
 		{
@@ -32,6 +33,7 @@ namespace G3D.Frontend.Avatars
 			this.ownMeshRenderer.material = NormalMaterial;
 			this.triggerCollider = gameObject.GetComponents<SphereCollider>()[1];
 			this.triggerCollider.radius = triggerColliderRadius;
+			this.forceCooler = ForceCooler.GetInstance();
 		}
 
 		void OnTriggerStay(Collider other)
@@ -48,7 +50,7 @@ namespace G3D.Frontend.Avatars
 			Vector3 deltaPosition = otherPosition - transform.position;
 			Vector3 direction = deltaPosition.normalized;
 			float distance = deltaPosition.magnitude;
-			return direction * (1 / distance - 1 / triggerColliderRadius) * highlightForceFactor;
+			return direction * (1 / distance - 1 / triggerColliderRadius) * highlightForceFactor * this.forceCooler.getForceCoolFactor();
 		}
 
 	}

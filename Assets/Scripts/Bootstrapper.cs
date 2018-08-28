@@ -79,6 +79,8 @@ namespace G3D
 			IForce edgeForce = new Frontend.Physics.ForceEdge(new Frontend.RegistryEdgeAvatar(this.graph));
 			this.fixedUpdatables.Add(edgeForce);
 			this.observers.Add(new Frontend.Physics.ForceFactorListener<EISliderEdgeFChanged>(edgeForce));
+
+			this.updatables.Add(Frontend.ForceCooler.GetInstance());
 		}
 
 		void setupInputScanners()
