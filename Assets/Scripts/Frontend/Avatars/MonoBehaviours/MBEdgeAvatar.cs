@@ -2,9 +2,8 @@
 
 namespace G3D.Frontend.Avatars
 {
-	public class MBEdgeAvatar : MonoBehaviour, IHighlightableTernary
+	public class MBEdgeAvatar : MonoBehaviour, IHighlightableTernary, IAdjustableLineWidth
 	{
-		//TODO: Force calculation in external class that itetrates over graphs Edge dict.
 		static float normalWidth = 0.03f;
 		static float highlightedWidth = 0.05f;
 
@@ -26,6 +25,23 @@ namespace G3D.Frontend.Avatars
 			this.targetNodeAvatar = avatar;
 		}
 
+		public void SetSourceLineWidth(float value)
+		{
+			if (this.ownlineRenderer == null)
+			{
+				this.ownlineRenderer = GetComponent<LineRenderer>();
+			}
+			this.ownlineRenderer.startWidth = value;
+
+		}
+		public void SetTargetLineWidth(float value)
+		{
+			if (this.ownlineRenderer == null)
+			{
+				this.ownlineRenderer = GetComponent<LineRenderer>();
+			}
+			this.ownlineRenderer.endWidth = value;
+		}
 
 		void Start()
 		{

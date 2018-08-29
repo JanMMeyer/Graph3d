@@ -20,7 +20,7 @@ namespace G3D.Core.Graph
 			string sourceId;
 			string targetId;
 			string label;
-			string category;
+			string type;
 			foreach (IRecord edgeRecord in edgeRecords)
 			{
 
@@ -39,9 +39,9 @@ namespace G3D.Core.Graph
 						{
 							edge.SetLabel(label);
 						}
-						if (edgeRecord.TryGet("category", out category))
+						if (edgeRecord.TryGet("type", out type))
 						{
-							edge.SetCategory(category);
+							edge.SetEdgeType(type);
 						}
 						edges.Add(edge);
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using G3D;
 
 namespace G3D.Core.Graph
 {
@@ -7,12 +8,12 @@ namespace G3D.Core.Graph
 	public class Edge : AGraphElement, IEdge
 	{
 		// u = undirected, d = directed, h = hierarchical (parent -> child)
-		static char[] supportedEdgeCategories = new char[] { 'u', 'd', 'h' };
+		static char[] supportedEdgeTypes = new char[] { 'u', 'd', 'h' };
 		
 		INode source;
 		INode target;
 
-		char edgeCategory = 'u';
+		char edgeType = 'u';
 
 		public Edge(string edgeId, INode source, INode target) : base(edgeId)
 		{
@@ -22,23 +23,23 @@ namespace G3D.Core.Graph
 			this.target = target;
 		}
 
-		public void SetCategory(string edgeCategory)
+		public void SetEdgeType(string edgeType)
 		{
-			if (edgeCategory.Length == 1)
+			if (edgeType.Length == 1)
 			{
-				this.SetCategory((char)edgeCategory[0]);
+				this.SetEdgeType((char)edgeType[0]);
 			}
 			else
 			{
-				//TODO: log error with edge ID
+				G3DLogger.Log("Unknown edge-type '{0}' for edge id {1}", new object[]{edgeType, this.GetId()});
 			}
 		}
 
-		public void SetCategory(char edgeCategory)
+		public void SetEdgeType(char edgeType)
 		{
-			if (supportedEdgeCategories.Contains(edgeCategory))
+			if (supportedEdgeTypes.Contains(edgeType))
 			{
-				this.edgeCategory = edgeCategory;
+				this.edgeType = edgeType;
 			}
 			else
 			{
@@ -46,9 +47,9 @@ namespace G3D.Core.Graph
 			}
 		}
 
-		public char GetEdgeCategory()
+		public char GetEdgeType()
 		{
-			return this.edgeCategory;
+			return this.edgeType;
 		}
 
 		public INode GetSourceNode()

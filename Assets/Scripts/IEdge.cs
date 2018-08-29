@@ -2,10 +2,10 @@
 {
 	public interface IEdge : IGraphElement
 	{
-		char GetEdgeCategory();
+		char GetEdgeType();
 		INode GetSourceNode();
 		INode GetTargetNode();
-		void SetCategory(string edgeCategory);
-		void SetCategory(char edgeCategory);
+		void SetEdgeType(string edgeCategory);
+		void SetEdgeType(char edgeCategory);
 	}
 }

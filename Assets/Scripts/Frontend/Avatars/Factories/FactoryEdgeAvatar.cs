@@ -12,10 +12,15 @@ namespace G3D.Frontend.Avatars
 		protected override void SpawnAvatar(IEdge edge)
 		{
 			IEdgeAvatar edgeAvatar = new EdgeAvatar(this.avatarPrefab, edge);
-			IHighlightableTernary highlightableT = edgeAvatar.GetGameObject().GetComponent<MBEdgeAvatar>();
-			if (highlightableT != null)
+			MBEdgeAvatar mbEdgeAvatar = edgeAvatar.GetGameObject().GetComponent<MBEdgeAvatar>();
+			if (mbEdgeAvatar != null)
 			{
-				edgeAvatar = new EdgeAvatarHighlightable(edgeAvatar, highlightableT);
+				edgeAvatar = new EdgeAvatarHighlightable(edgeAvatar, mbEdgeAvatar);
+				if (edge.GetEdgeType() == 'd')
+				{
+					edgeAvatar = new EdgeAvatarDirected(edgeAvatar, mbEdgeAvatar);
+				}
+				
 			}
 			edge.SetAvatar(edgeAvatar);
 		}
