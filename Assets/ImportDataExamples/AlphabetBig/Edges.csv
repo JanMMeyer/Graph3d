@@ -1,0 +1,178 @@
+﻿id;source;target;type;label
+0;Bravo;Alfa;d;follows
+1;Charlie;Bravo;d;follows
+2;Delta;Charlie;d;follows
+3;Echo;Delta;d;follows
+4;Foxtrot;Echo;d;follows
+5;Golf;Foxtrot;d;follows
+6;Hotel;Golf;d;follows
+7;India;Hotel;d;follows
+8;Juliett;India;d;follows
+9;Kilo;Juliett;d;follows
+10;Lima;Kilo;d;follows
+11;Mike;Lima;d;follows
+12;Oscar;Mike;d;follows
+13;Papa;Oscar;d;follows
+14;Quebec;Papa;d;follows
+15;Romeo;Quebec;d;follows
+16;Sierra;Romeo;d;follows
+17;Tango;Sierra;d;follows
+18;Uniform;Tango;d;follows
+19;Victor;Uniform;d;follows
+20;Whiskey;Victor;d;follows
+21;X-Ray;Whiskey;d;follows
+22;Yankee;X-Ray;d;follows
+23;Zulu;Yankee;d;follows
+24;Berta;Anton;d;follows
+25;Charlotte;Berta;d;follows
+26;Dora;Charlotte;d;follows
+27;Emil;Dora;d;follows
+28;Friedrich;Emil;d;follows
+29;Gustav;Friedrich;d;follows
+30;Heinrich;Gustav;d;follows
+31;Ida;Heinrich;d;follows
+32;Julius;Ida;d;follows
+33;Kaufmann;Julius;d;follows
+34;Ludwig;Kaufmann;d;follows
+35;Martha;Ludwig;d;follows
+36;Nordpol;Martha;d;follows
+37;Otto;Nordpol;d;follows
+38;Paula;Otto;d;follows
+39;Quelle;Paula;d;follows
+40;Richard;Quelle;d;follows
+41;Samuel;Richard;d;follows
+42;Ulrich;Samuel;d;follows
+43;Viktor;Ulrich;d;follows
+44;Wilhelm;Viktor;d;follows
+45;Xanthippe;Wilhelm;d;follows
+46;Ypsilon;Xanthippe;d;follows
+47;Zacharias;Ypsilon;d;follows
+48;Alfa;Anton;u;translates
+49;Bravo;Berta;u;translates
+50;Charlie;Charlotte;u;translates
+51;Delta;Dora;u;translates
+52;Echo;Emil;u;translates
+53;Foxtrot;Friedrich;u;translates
+54;Golf;Gustav;u;translates
+55;Hotel;Heinrich;u;translates
+56;India;Ida;u;translates
+57;Juliett;Julius;u;translates
+58;Kilo;Kaufmann;u;translates
+59;Lima;Ludwig;u;translates
+60;Mike;Martha;u;translates
+61;Oscar;Nordpol;u;translates
+62;Papa;Otto;u;translates
+63;Quebec;Paula;u;translates
+64;Romeo;Quelle;u;translates
+65;Sierra;Richard;u;translates
+66;Tango;Samuel;u;translates
+67;Uniform;Ulrich;u;translates
+68;Victor;Viktor;u;translates
+69;Whiskey;Wilhelm;u;translates
+70;X-Ray;Xanthippe;u;translates
+71;Yankee;Ypsilon;u;translates
+72;Zulu;Zacharias;u;translates
+73;Alfa;vowel;d;is a
+74;Bravo;consonant;d;is a
+75;Charlie;consonant;d;is a
+76;Delta;consonant;d;is a
+77;Echo;vowel;d;is a
+78;Foxtrot;consonant;d;is a
+79;Golf;consonant;d;is a
+80;Hotel;consonant;d;is a
+81;India;vowel;d;is a
+82;Juliett;consonant;d;is a
+83;Kilo;consonant;d;is a
+84;Lima;consonant;d;is a
+85;Mike;consonant;d;is a
+86;Oscar;vowel;d;is a
+87;Papa;consonant;d;is a
+88;Quebec;consonant;d;is a
+89;Romeo;consonant;d;is a
+90;Sierra;consonant;d;is a
+91;Tango;consonant;d;is a
+92;Uniform;consonant;d;is a
+93;Victor;consonant;d;is a
+94;Whiskey;consonant;d;is a
+95;X-Ray;consonant;d;is a
+96;Yankee;vowel;d;is a
+97;Zulu;consonant;d;is a
+98;Anton;vowel;d;is a
+99;Berta;consonant;d;is a
+100;Charlotte;consonant;d;is a
+101;Dora;consonant;d;is a
+102;Emil;vowel;d;is a
+103;Friedrich;consonant;d;is a
+104;Gustav;consonant;d;is a
+105;Heinrich;consonant;d;is a
+106;Ida;vowel;d;is a
+107;Julius;consonant;d;is a
+108;Kaufmann;consonant;d;is a
+109;Ludwig;consonant;d;is a
+110;Martha;consonant;d;is a
+111;Nordpol;vowel;d;is a
+112;Otto;consonant;d;is a
+113;Paula;consonant;d;is a
+114;Quelle;consonant;d;is a
+115;Richard;consonant;d;is a
+116;Samuel;consonant;d;is a
+117;Ulrich;consonant;d;is a
+118;Viktor;consonant;d;is a
+119;Wilhelm;consonant;d;is a
+120;Xanthippe;consonant;d;is a
+121;Ypsilon;vowel;d;is a
+122;Zacharias;consonant;d;is a
+123;Alfa;englisch;d;is in
+124;Bravo;englisch;d;is in
+125;Charlie;englisch;d;is in
+126;Delta;englisch;d;is in
+127;Echo;englisch;d;is in
+128;Foxtrot;englisch;d;is in
+129;Golf;englisch;d;is in
+130;Hotel;englisch;d;is in
+131;India;englisch;d;is in
+132;Juliett;englisch;d;is in
+133;Kilo;englisch;d;is in
+134;Lima;englisch;d;is in
+135;Mike;englisch;d;is in
+136;Oscar;englisch;d;is in
+137;Papa;englisch;d;is in
+138;Quebec;englisch;d;is in
+139;Romeo;englisch;d;is in
+140;Sierra;englisch;d;is in
+141;Tango;englisch;d;is in
+142;Uniform;englisch;d;is in
+143;Victor;englisch;d;is in
+144;Whiskey;englisch;d;is in
+145;X-Ray;englisch;d;is in
+146;Yankee;englisch;d;is in
+147;Zulu;englisch;d;is in
+148;Anton;german;d;is in
+149;Berta;german;d;is in
+150;Charlotte;german;d;is in
+151;Dora;german;d;is in
+152;Emil;german;d;is in
+153;Friedrich;german;d;is in
+154;Gustav;german;d;is in
+155;Heinrich;german;d;is in
+156;Ida;german;d;is in
+157;Julius;german;d;is in
+158;Kaufmann;german;d;is in
+159;Ludwig;german;d;is in
+160;Martha;german;d;is in
+161;Nordpol;german;d;is in
+162;Otto;german;d;is in
+163;Paula;german;d;is in
+164;Quelle;german;d;is in
+165;Richard;german;d;is in
+166;Samuel;german;d;is in
+167;Ulrich;german;d;is in
+168;Viktor;german;d;is in
+169;Wilhelm;german;d;is in
+170;Xanthippe;german;d;is in
+171;Ypsilon;german;d;is in
+172;Zacharias;german;d;is in
+173;englisch;language;d;is a
+174;german;language;d;is a
+175;vowel;character;d;is a
+176;consonant;character;d;is a
