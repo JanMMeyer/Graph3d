@@ -1,0 +1,3 @@
+﻿id;source;target;type;label
+0;source;target1;d;directed
+1;source;target2;u;undirected

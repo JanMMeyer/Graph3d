@@ -5,7 +5,7 @@
 		
 		public EdgeAvatarDirected(IEdgeAvatar edgeAvatar, IAdjustableLineWidth adjustableLW) : base(edgeAvatar)
 		{
-			adjustableLW.SetSourceLineWidth(6f);
+			adjustableLW.SetSourceLineWidth(4.5f);
 			adjustableLW.SetTargetLineWidth(0.5f);
 		}
 

@@ -2152,6 +2152,8 @@ MonoBehaviour:
     type: 2}
   edgeAvatarPrefab: {fileID: 1415726174502286, guid: ef666c95c08fcbf4f9141384a50b5965,
     type: 2}
+  edgeLabelAvatarPrefab: {fileID: 1950095723858474, guid: c2b7151860d8b5f4da790b7da74d8794,
+    type: 2}
 --- !u!4 &1526656350
 Transform:
   m_ObjectHideFlags: 0

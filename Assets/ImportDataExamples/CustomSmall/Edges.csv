@@ -1,28 +1,28 @@
-﻿id;source;target;type
-0;0;1;u
-1;1;2;u
-2;2;3;u
-3;3;4;u
-4;4;5;u
-5;5;6;u
-6;6;7;u
-7;7;8;u
-8;8;9;u
-9;9;10;u
-10;10;11;u
-11;11;12;u
-12;12;13;u
-13;0;5;d
-14;0;6;d
-15;1;7;d
-16;1;8;d
-17;2;9;d
-18;2;10;d
-19;2;11;d
-20;3;12;d
-21;3;13;d
-22;3;1;d
-23;4;2;d
-24;4;3;d
-25;4;4;d
-26;4;5;d
+﻿id;source;target;type;label
+0;0;1;u;connect
+1;1;2;u;connect
+2;2;3;u;connect
+3;3;4;u;connect
+4;4;5;u;connect
+5;5;6;u;connect
+6;6;7;u;connect
+7;7;8;u;connect
+8;8;9;u;connect
+9;9;10;u;connect
+10;10;11;u;connect
+11;11;12;u;connect
+12;12;13;u;connect
+13;0;5;d;is a
+14;0;6;d;is a
+15;1;7;d;is a
+16;1;8;d;is a
+17;2;9;d;is a
+18;2;10;d;is a
+19;2;11;d;is a
+20;3;12;d;is a
+21;3;13;d;is a
+22;3;1;d;is a
+23;4;2;d;is a
+24;4;3;d;is a
+25;4;4;d;is a
+26;4;5;d;is a

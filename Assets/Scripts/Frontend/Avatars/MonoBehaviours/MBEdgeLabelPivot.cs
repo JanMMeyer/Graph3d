@@ -2,7 +2,7 @@
 
 namespace G3D.Frontend.Avatars
 {
-	public class MBNodeLabelPivot : MonoBehaviour
+	public class MBEdgeLabelPivot : MonoBehaviour
 	{
 		static Transform mainCameraTransform;
 	
@@ -11,7 +11,7 @@ namespace G3D.Frontend.Avatars
 			if (mainCameraTransform == null)
 			{
 				mainCameraTransform = Camera.main.transform;
-			}	
+			}
 		}
 
 		void Update()

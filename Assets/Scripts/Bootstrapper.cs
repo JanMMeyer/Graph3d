@@ -10,6 +10,7 @@ namespace G3D
 		public GameObject nodeAvatarPrefab;
 		public GameObject nodeLabelAvatarPrefab;
 		public GameObject edgeAvatarPrefab;
+		public GameObject edgeLabelAvatarPrefab;
 
 		IGraph graph;
 				
@@ -28,8 +29,7 @@ namespace G3D
 			this.setupForces();
 			this.setupInputScanners();
 
-			//EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/CustomSmall/", "csv"));
-			//EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/LesMiserables/", "csv"));
+			EventPublisher.Publish(new EIImport(Application.dataPath + "/ImportDataExamples/Intro/", "csv"));
 		}
 
 		void Update()
@@ -62,7 +62,7 @@ namespace G3D
 		void setupAvatarFactories()
 		{
 			this.observers.Add(new Frontend.Avatars.FactoryNodeAvatar(this.nodeAvatarPrefab, this.nodeLabelAvatarPrefab));
-			this.observers.Add(new Frontend.Avatars.FactoryEdgeAvatar(this.edgeAvatarPrefab));
+			this.observers.Add(new Frontend.Avatars.FactoryEdgeAvatar(this.edgeAvatarPrefab, this.edgeLabelAvatarPrefab));
 		}
 
 		void setupForces()

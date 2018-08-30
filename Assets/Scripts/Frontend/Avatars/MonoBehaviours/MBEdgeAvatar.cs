@@ -48,12 +48,16 @@ namespace G3D.Frontend.Avatars
 			this.ownlineRenderer = GetComponent<LineRenderer>();
 			this.ownlineRenderer.material = NormalMaterial;
 			this.ownlineRenderer.widthMultiplier = normalWidth;
+			this.setPosition(sourceNodeAvatar.GetPosition(), targetNodeAvatar.GetPosition());
 		}
 
 		void Update()
 		{
-			this.ownlineRenderer.SetPosition(0, sourceNodeAvatar.GetPosition());
-			this.ownlineRenderer.SetPosition(1, targetNodeAvatar.GetPosition());
+			Vector3 sourcePos = this.sourceNodeAvatar.GetPosition();
+			Vector3 targetPos = this.targetNodeAvatar.GetPosition();
+			this.ownlineRenderer.SetPosition(0, sourcePos);
+			this.ownlineRenderer.SetPosition(1, targetPos);
+			this.setPosition(sourcePos, targetPos);
 		}
 
 
@@ -77,6 +81,11 @@ namespace G3D.Frontend.Avatars
 					G3DLogger.Log("HighlightableTernary got invalid state argument {1} in 'SetHighlighted(int state)', state must be 0, 1 or 2!", state);
 					break;
 			}
+		}
+
+		void setPosition(Vector3 sourcePos, Vector3 targetPos)
+		{
+			this.transform.position = (sourcePos + targetPos) / 2f;
 		}
 	}
 }

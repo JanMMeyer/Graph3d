@@ -4,9 +4,10 @@ namespace G3D.Frontend.Avatars
 {
 	public class FactoryEdgeAvatar : AFactoryAvatar<IEdge>
 	{
-
-		public FactoryEdgeAvatar(GameObject prefab) : base(prefab)
+		GameObject labelAvatarPrefab;
+		public FactoryEdgeAvatar(GameObject prefab, GameObject labelAvatarPrefab) : base(prefab)
 		{
+			this.labelAvatarPrefab = labelAvatarPrefab;
 		}
 
 		protected override void SpawnAvatar(IEdge edge)
@@ -20,7 +21,11 @@ namespace G3D.Frontend.Avatars
 				{
 					edgeAvatar = new EdgeAvatarDirected(edgeAvatar, mbEdgeAvatar);
 				}
-				
+			}
+			string labelText;
+			if (edge.TryGetLabel(out labelText))
+			{
+				edgeAvatar = new EdgeAvatarLabeled(edgeAvatar, labelAvatarPrefab, labelText);
 			}
 			edge.SetAvatar(edgeAvatar);
 		}
