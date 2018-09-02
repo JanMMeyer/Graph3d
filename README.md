@@ -12,7 +12,7 @@ Graph3d is also an *experiment in solid programming i wrote in my free time over
  * Extensibility of the backend, so that new file adapters can be added with ease.
  * Flexibility of the business layer, so that extensions of the core domain are simple to execute and don't lead to (to much) adaptation pressure outside of the domain. 
 
-The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales file browser plugin](https://goo.gl/GCmzrU) which needs to be installed separately via the asset-store to build the project in Unity3d. The C# source code hides in Assets/scripts.
+The "Assets" folder contains only the Graph3d-Assets. Graph3d uses the [crosstales file browser plugin](https://goo.gl/GCmzrU) which needs to be installed separately via the asset-store to build the project in Unity3d. The browser plugin is only available for Windows and MacOs, wich limits compilation of Graph3D to those platforms. The C# source code hides in Assets/scripts.
 
 # Installation and Usage
 
